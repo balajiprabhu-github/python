@@ -1,22 +1,22 @@
 # Python Roadmap for AI Engineers
 
-For a mobile engineer (Kotlin, Android, Flutter) moving to AI engineering.
+For an Android engineer (Kotlin) moving to AI engineering.
 Scope: **Python only**: the language, its tooling, and the Python libraries used in AI work.
 Not covered here: ML theory, Docker/Kubernetes, cloud, Git/Linux. Those belong in separate repos.
 
 Pace: ~8–10 hrs/week, about 14 weeks.
 
-## Kotlin/Dart → Python cheat sheet
+## Kotlin → Python cheat sheet
 
-| Concept | Kotlin / Dart | Python |
+| Concept | Kotlin | Python |
 |---|---|---|
 | Null safety | `?`, `?.`, `?:` | `None`, `x or default`, `is not None` |
-| Data class | `data class` / freezed | `@dataclass`, `pydantic.BaseModel` |
+| Data class | `data class` | `@dataclass`, `pydantic.BaseModel` |
 | Coroutines | `suspend`, `Flow` | `async/await`, `asyncio`, generators |
 | Collection ops | `map/filter/fold` | comprehensions, `itertools`, `functools` |
 | Interfaces | `interface` | `Protocol`, `ABC` |
-| Build/deps | Gradle / pub | `pyproject.toml`, `uv` / `pip` |
-| Static typing | enforced | optional: `pyright` / `mypy` |
+| Build/deps | Gradle (`build.gradle.kts`) | `pyproject.toml`, `uv` |
+| Static typing | Enforced at compile time | Optional: `pyright` / `mypy` |
 
 ---
 
