@@ -6,8 +6,8 @@ Designed for engineers transitioning from Kotlin.
 
 | Module | Topics | Status |
 |---|---|---|
-| `01_syntax_types` | Dynamic typing, Truthiness, `None`, f-strings, Unpacking | In Progress |
-| `02_collections_slices` | `list`, `dict`, `set`, `tuple`, slicing, comprehensions | Planned |
+| `01_syntax_types` | Dynamic typing, Truthiness, `None`, f-strings, Unpacking | Completed |
+| `02_collections_slices` | `list`, `dict`, `set`, `tuple`, slicing, comprehensions | In Progress |
 | `03_functions_gotchas` | `*args`, `**kwargs`, mutable default pitfall, closures | Planned |
 | `04_error_handling` | `try / except / else / finally`, custom exceptions | Planned |
 | `05_files_modules_io` | `pathlib`, `json`, `csv`, `logging`, `__name__ == "__main__"` | Planned |

@@ -5,6 +5,8 @@ Fill in the TODOs below. Run tests with:
     uv run pytest 01_syntax_types/test_exercises.py
 """
 
+
+
 def format_model_metric(model_name: str, latency_ms: float, accuracy: float) -> str:
     """
     Format a model metric string.
@@ -17,8 +19,7 @@ def format_model_metric(model_name: str, latency_ms: float, accuracy: float) -> 
     - Latency formatted to 1 decimal place with 'ms' suffix
     - Accuracy formatted as a percentage with 2 decimal places and '%' suffix
     """
-    # TODO: Implement using f-strings
-    pass
+    return f"[{model_name.upper()}] latency: {latency_ms:.1f}ms, accuracy: {accuracy:.2%}"
 
 
 def safe_token_limit(provided: int | None, default: int = 2048) -> int:
@@ -30,9 +31,7 @@ def safe_token_limit(provided: int | None, default: int = 2048) -> int:
     In Python: `provided or default` treats 0 as Falsy, so `0 or 2048` would wrongly return 2048!
     If provided is 0 (e.g. streaming with zero buffering), it must return 0.
     """
-    # TODO: Implement handling None vs Falsy
-    pass
-
+    return default if provided is None else provided
 
 def split_rag_context(records: list[str]) -> tuple[str, list[str], str]:
     """
@@ -45,8 +44,10 @@ def split_rag_context(records: list[str]) -> tuple[str, list[str], str]:
 
     Use extended unpacking (*rest).
     """
-    # TODO: Implement using extended unpacking
-    pass
+    if(len(records) < 2):
+        raise ValueError("Need at least 2 records")
+    system_prompt , *retrieved_document_chunks, user_query = records
+    return system_prompt, retrieved_document_chunks, user_query 
 
 
 def merge_llm_kwargs(base: dict, overrides: dict | None = None, **extra) -> dict:
@@ -61,5 +62,4 @@ def merge_llm_kwargs(base: dict, overrides: dict | None = None, **extra) -> dict
         merge_llm_kwargs({"temp": 0.7, "top_p": 1.0}, {"temp": 0.2}, stream=True)
         -> {"temp": 0.2, "top_p": 1.0, "stream": True}
     """
-    # TODO: Implement using dictionary unpacking
-    pass
+    return {**base, **(overrides or {}), **extra}

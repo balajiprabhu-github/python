@@ -1,10 +1,13 @@
 import pytest
+
+# pyrefly: ignore[missing-import]
 from exercises import (
     format_model_metric,
+    merge_llm_kwargs,
     safe_token_limit,
     split_rag_context,
-    merge_llm_kwargs,
 )
+
 
 def test_format_model_metric():
     res = format_model_metric("gpt-4o", 124.567, 0.9452)
