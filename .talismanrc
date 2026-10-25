@@ -1,4 +1,2 @@
-fileignoreconfig:
-- filename: 01-core/uv.lock
-  checksum: 35d56b35472ab2ab3b66c6e61345ae92b06516a6f11c573eeb322e79cbcfcd3a
+fileignoreconfig: []
 version: "1.0"
