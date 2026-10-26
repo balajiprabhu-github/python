@@ -9,8 +9,8 @@
 - `print()` parameters (`sep`, `end`) and format strings (`f"..."`)
 
 ## Problem Set 0
-- [ ] **Indoor Voice** (`indoor.py`)
-- [ ] **Playback Speed** (`playback.py`)
-- [ ] **Making Faces** (`faces.py`)
-- [ ] **Einstein** (`einstein.py`)
-- [ ] **Tip Calculator** (`tip.py`)
+- [x] **Indoor Voice** (`indoor.py`)
+- [x] **Playback Speed** (`playback.py`)
+- [x] **Making Faces** (`faces.py`)
+- [x] **Einstein** (`einstein.py`)
+- [x] **Tip Calculator** (`tip.py`)

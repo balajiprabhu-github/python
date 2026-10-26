@@ -11,7 +11,7 @@ Harvard University's introduction to programming using Python.
 
 | Week | Topic | Problem Set | Status |
 |:---:|:---|:---|:---:|
-| **0** | Functions, Variables | Indoor Voice, Playback Speed, Making Faces, Einstein, Tip Calculator | ⬜ Not Started |
+| **0** | Functions, Variables | Indoor Voice, Playback Speed, Making Faces, Einstein, Tip Calculator | ✅ Completed |
 | **1** | Conditionals | Deep Thought, Home Federal Savings Bank, File Extensions, Math Interpreter, Meal Time | ⬜ Not Started |
 | **2** | Loops | camelCase, Coke Machine, Just setting up my twttr, Vanity Plates, Nutrition Facts | ⬜ Not Started |
 | **3** | Exceptions | Fuel Gauge, Felipe's Taqueria, Grocery List, Outdated | ⬜ Not Started |

@@ -16,5 +16,6 @@ ENV/
 .coverage
 htmlcov/
 
-# OS artifacts
+# OS & IDE artifacts
 .DS_Store
+.vscode/
