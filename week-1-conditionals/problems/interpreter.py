@@ -14,14 +14,24 @@ Requirements:
 """
 
 def main():
-    # TODO: Prompt user for expression
-    ...
+    
+    user_input = input("Expression: ")
 
-    # TODO: Split the expression into x, y, z
-    ...
+    x, y, z = user_input.strip().split(" ")
 
-    # TODO: Calculate result and print formatted to 1 decimal place
-    ...
+    result = calculate(x, z, y)
+    
+    print(f"{result:.1f}")
+
+def calculate(x: str, z: str, operator: str):
+    if operator == "+":
+        return float(x) + float(z)
+    elif operator == "-":
+        return float(x) - float(z)
+    elif operator == "*":
+        return float(x) * float(z)
+    elif operator == "/":
+        return float(x) / float(z)
 
 
 if __name__ == "__main__":

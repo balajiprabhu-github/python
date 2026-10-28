@@ -17,12 +17,24 @@ Requirements:
 """
 
 def main():
-    # TODO: Prompt the user for a file name
-    ...
+    user_input = input("File name: ")
 
-    # TODO: Determine the media type and print the result
-    ...
-
+    filename = user_input.strip().lower()
+    
+    if filename.endswith(".gif"):
+        print("image/gif")
+    elif filename.endswith((".jpg", ".jpeg")):
+        print("image/jpeg")
+    elif filename.endswith(".png"):
+        print("image/png")
+    elif filename.endswith(".pdf"):
+        print("application/pdf")
+    elif filename.endswith(".txt"):
+        print("text/plain")
+    elif filename.endswith(".zip"):
+        print("application/zip")
+    else:
+        print("application/octet-stream")
 
 if __name__ == "__main__":
     main()
