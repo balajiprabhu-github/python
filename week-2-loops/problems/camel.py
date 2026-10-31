@@ -14,11 +14,16 @@ Requirements:
 
 
 def main():
-    # TODO: Prompt user for a variable name in camelCase
-    ...
-
-    # TODO: Iterate through each character and convert to snake_case
-    ...
+   
+    str = input("camelCase: ")
+    print("snake_case: ", end="")
+    
+    for char in str:
+      if(char.isupper()): 
+          print("_", end="")
+      print(char.lower(), end="")
+      
+    print()
 
 
 if __name__ == "__main__":
