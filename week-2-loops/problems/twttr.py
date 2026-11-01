@@ -16,12 +16,15 @@ Requirements:
 
 
 def main():
-    # TODO: Prompt user for text input
-    ...
 
-    # TODO: Remove all vowels (a, e, i, o, u, both upper and lower case) and print result
-    ...
+    text = input("Input: ")
+    print("Output: ", end="")
 
+    for char in text:
+        if char.lower() not in("a","e","i","o","u"):
+            print(char, end="")
+
+    print()
 
 if __name__ == "__main__":
     main()
