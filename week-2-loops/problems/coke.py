@@ -17,14 +17,18 @@ Requirements:
 
 
 def main():
-    # TODO: Track the amount due starting at 50 cents
-    ...
-
-    # TODO: Loop until the amount due is 0 or less, accepting only 25, 10, or 5 cent coins
-    ...
-
-    # TODO: Output the change owed
-    ...
+    
+    amount_due = 50
+    insert_coin = 0
+    
+    while(amount_due > 0):
+        print(f"Amount Due: {amount_due}")
+        insert_coin = int(input("Insert Coin: "))
+        if insert_coin in (5,10,25):
+            amount_due -= insert_coin
+    
+    print(f"Change Owed: {abs(amount_due)}")
+            
 
 
 if __name__ == "__main__":
