@@ -14,15 +14,12 @@ Requirements:
 
 
 def main():
-   
-    str = input("camelCase: ")
+    text = input("camelCase: ")
     print("snake_case: ", end="")
-    
-    for char in str:
+    for char in text:
       if(char.isupper()): 
           print("_", end="")
       print(char.lower(), end="")
-      
     print()
 
 
