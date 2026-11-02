@@ -29,9 +29,27 @@ def main():
 
 
 def is_valid(s):
-    # TODO: Check all vanity plate requirements and return True or False
-    ...
-
+    length = len(s)
+    if length < 2 or length > 6:
+        return False
+    
+    if not s[0:2].isalpha():
+        return False
+    
+    if not s.isalnum():
+        return False
+     
+    for i in range(2, length):
+        if s[i].isdigit():
+            if s[i] == "0":
+                return False
+            elif s[i:].isdigit():
+                return True
+            else:
+                return False
+        
+    return True
+            
 
 if __name__ == "__main__":
     main()
